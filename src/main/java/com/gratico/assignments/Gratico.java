@@ -12,6 +12,15 @@ public class Gratico {
 	public static void main(String[] args) {
 		// first assignment
 		Gratico.firstAssignment();
+		
+		CommonUtility.printLine("Age: ");
+		
+		int age = Integer.parseInt(CommonUtility.read());
+		
+		CommonUtility.print("Age is %d", age);
+		
+		
+		
 	}
 	
 	

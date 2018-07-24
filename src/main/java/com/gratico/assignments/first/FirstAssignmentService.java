@@ -10,5 +10,5 @@ public interface FirstAssignmentService {
 	boolean isOdd(int a);
 	int[] sortByDesc(int[] args);
 	int[] sortByAsc(int[] args);
-	int findIndexByElement(int a);
+	public int findIndexByElement(int[] elements, int a);
 }
