@@ -111,10 +111,10 @@
 </body>
 <script src="../../webjars/jquery/3.3.1/dist/jquery.min.js"></script>
 <script src="../../webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../resources/js/keme.js"></script>
 <script>
 	document.getElementById('check').addEventListener('click', function() {
 		window.alert("Levi");
 	});
-
 </script>
 </html>
