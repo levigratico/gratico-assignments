@@ -38,7 +38,7 @@ public class FirstAssigmentServiceImpl implements FirstAssignmentService {
 		return null;
 	}
 
-	public int findIndexByElement(int a) {
+	public int findIndexByElement(int[] elements, int a) {
 		return 0;
 	}
 

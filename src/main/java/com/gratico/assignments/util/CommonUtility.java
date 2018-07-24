@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class CommonUtility {
 	
-	public static Object readLine() {
+	public static String readLine() {
 		Scanner s = new Scanner(System.in);
-		return (Object) s.nextLine();
+		return s.nextLine();
 	}
 	
 	public static void print(String message) {
@@ -17,9 +17,9 @@ public class CommonUtility {
 		System.out.print(String.format(format, args));
 	}
 	
-	public static Object read() {
+	public static String read() {
 		Scanner s = new Scanner(System.in);
-		return (Object) s.next();
+		return s.next();
 	}
 	
 	public static void printLine(String format, Object... args) {
