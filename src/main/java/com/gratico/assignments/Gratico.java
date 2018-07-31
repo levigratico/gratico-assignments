@@ -13,44 +13,39 @@ public class Gratico {
 		// first assignment
 		Gratico.firstAssignment();
 		
-//		CommonUtility.printLine("Age: ");
-//		
-//		int age = Integer.parseInt(CommonUtility.read());
-//		
-//		CommonUtility.print("Age is %d", age);
-		
+
 		
 		
 	}
 	
 	
 	public static void firstAssignment() {
-//		// addition
-//		FirstAssignment.add();
-//		
-//		// subtraction
-//		FirstAssignment.subtract();
-//		
-//		// multiplication
-//		FirstAssignment.multiply();
-//		
-//		// Division
-//		FirstAssignment.divide();
-//		
-//		// modulus
-//		FirstAssignment.modolus();
-//		
+		// addition
+		FirstAssignment.add();
+		
+		// subtraction
+		FirstAssignment.subtract();
+		
+		// multiplication
+		FirstAssignment.multiply();
+		
+		// Division
+		FirstAssignment.divide();
+	
+		// modulus
+		FirstAssignment.modolus();
+	
 		// power
-//		FirstAssignment.power();
+		FirstAssignment.power();
 		
 		// odd or even
-//		FirstAssignment.isOdd();
+		FirstAssignment.isOdd();
 		
-//		 sort by descending
+		// sort by descending
 		FirstAssignment.sortByDesc();
 		
 		// sort by ascending
-//		FirstAssignment.sortByAsc();
+		FirstAssignment.sortByAsc();
 		
 		// find index by element
 		FirstAssignment.findIndexByElement();
