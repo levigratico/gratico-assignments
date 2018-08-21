@@ -42,24 +42,24 @@
 			      <div class="panel-body">
 			      	<div class="btn-group-wrap">
 				      	<div class="btn-group btn-group-sm" style="">
-						    <button type="button" class="btn btn-primary">Temperature</button>
-						    <button type="button" class="btn btn-primary">Distance</button>
+						    <button id="temperature" type="button" class="btn btn-primary">Temperature</button>
+						    <button id="distance" type="button" class="btn btn-primary">Distance</button>
 						    <button type="button" class="btn btn-primary">Weight</button>
 						 </div>
 					 </div>
 					 <div style="margin-top: 5px;">
 					 	<div class="form-group">
-						  <label for="usr">Celsius:</label>
+						  <label for="usr" id="labelConverterFirst">Kilometer:</label>
 						  <input type="number" class="form-control" id="valueA">
 						</div>
 						<div class="form-group">
-						  <label for="pwd">Fahrenheit:</label>
+						  <label for="pwd" id="labelConverterSecond" >Meter:</label>
 						  <input type="number" class="form-control" id="valueB" value="0" readonly="readonly">
 						</div>
 					 </div>
 					 <div class="btn-group-wrap" style="margin-top: 5px;">
 				      	<div class="btn-group btn-group-sm" style="">
-						    <button type="button" class="btn btn-primary">Convert</button>
+						    <button type="button" id="convert" class="btn btn-primary">Convert</button>
 						    <button type="button" class="btn btn-primary">Reverse</button>
 						 </div>
 					 </div>
@@ -69,8 +69,8 @@
 			      <div class="panel-heading">Sorting</div>
 			      <div class="panel-body">
 			      	<div style="padding: 0 60px;">
-					    <label class="radio-inline"><input type="radio" name="optradio">Ascending</label>
-						<label class="radio-inline"><input type="radio" name="optradio">Descending</label>
+					    <label class="radio-inline"><input id="asc" type="radio" name="optradio">Ascending</label>
+						<label class="radio-inline"><input id="desc"  type="radio" name="optradio">Descending</label>
 				    </div>
 				    <div style="margin-top: 5px;">
 					 	<div class="form-group">
@@ -113,8 +113,57 @@
 <script src="../../webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../../resources/js/keme.js"></script>
 <script>
+	
+	var converterFlag = 0;
+
 	document.getElementById('check').addEventListener('click', function() {
 		window.alert("Levi");
 	});
+	
+	document.getElementById('temperature').addEventListener('click', function() {
+		// for temperature
+		document.getElementById('labelConverterFirst').textContent = 'Celsius:';
+		document.getElementById('labelConverterSecond').textContent = 'Fahrenheit:';
+		converterFlag = 0;
+		
+	});
+	
+	document.getElementById('distance').addEventListener('click', function() {
+		// for Distance
+		converterFlag = 1;
+		
+	});
+	
+	document.getElementById('convert').addEventListener('click', function() {
+		switch(converterFlag) {
+		case 0: // Temperature
+			for(var i = 0; i < 2; i++) {
+				console.log(i);
+			}
+			
+		if(document.getElementById('asc').checked) {
+			// for ascending
+			window.alert('levi');
+		}
+		
+		if(document.getElementById('desc').checked) {
+			// for descending
+			window.alert('noe');
+		}
+			
+		break;
+		case 1: // Distance
+			window.alert("Levi");
+		break;
+		case 2: // Weight
+		break;
+		}
+	});
+	
+	
+	
+	
+	
+	
 </script>
 </html>
